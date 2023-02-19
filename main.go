@@ -17,7 +17,7 @@ var key string
 func init() {
 	sess, _ = session.NewSession(&aws.Config{
 		Region:      aws.String("us-west-2"),
-		Credentials: credentials.NewSharedCredentials("", "personal"),
+		Credentials: credentials.NewSharedCredentials("", os.Getenv("AWS_PROFILE")),
 	})
 	log.SetFormatter(&log.JSONFormatter{PrettyPrint: true})
 	log.SetLevel(log.DebugLevel)

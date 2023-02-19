@@ -11,8 +11,9 @@
             "mode": "auto",
             "program": "${workspaceFolder}/",
             "env": {
-                "SAMPLE_BUCKET": "binaryheap-sample-files",
-                "SAMPLE_KEY": "sample.parquet"
+                "SAMPLE_BUCKET": "<insert bucket>",
+                "SAMPLE_KEY": "<insert key>",
+                "AWS_PROFILE": "<insert profile>"
             }
         }
     ]
